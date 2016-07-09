@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Wordnik API Project</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+</head>
+<body>
+	<h3>Welcome to the wordnik project!</h3>
+	<p>Type any word and get five synonyms back.</p>
+	<input type="text" id="synonyms" placeholder="Enter a word">
+	<div id="synonymList"></div>
+	<button id='synButton' onclick='getSynonyms()'>Click for Synonyms</button>
+
+	<p>Type any word to get spelling suggestions</p>
+	<input type="text" id="spelling" placeholder="Enter a word">
+	<div id="suggestedSpelling"></div>
+	<button id='spellButton' onclick='getSpellingSuggestions()'>Click for Spelling</button>
+
+	<p>Auto Completion (with similar/related words)</p>
+	<!-- <input type="text" id="wordPartial" placeholder="Start typing a word" onkeyup="autoCompleteWord()"> -->
+	<div class="ui-widget">
+	  <label for="tags">Tags: </label>
+
+	  <input type="text" id="wordPartial" placeholder="Start typing a word" onkeyup="autoCompleteWord()">
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="practics.js"></script>
+
+</body>
+</html>
